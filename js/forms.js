@@ -56,6 +56,7 @@
 
     $(document).on('blur', input_selector, function () {
       var $inputElement = $(this);
+
       var selector = ".prefix";
 
       if ($inputElement.val().length === 0 && $inputElement[0].validity.badInput !== true && $inputElement.attr('placeholder') === undefined) {
